@@ -1,17 +1,23 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 /**
  *main - main function
  *
- *Description:The program uses printf to print _putchar followed by a new line
+ *Description:The program uses _putchar to print _putchar followed by new line
  *
  *
  *Return: Always returns 0
  */
 int main(void)
 {
-	printf("_putchar\n");
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
 	return (0);
 }
