@@ -13,7 +13,7 @@ int x;
 
 for (x = 0; x < 10; x++)
 {
-	for (abc = 'a'; abc <= 'z'; abc ++)
+	for (abc = 'a'; abc <= 'z'; abc++)
 	{
 		_putchar(abc);
 }
