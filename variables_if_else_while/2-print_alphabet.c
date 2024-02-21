@@ -4,14 +4,16 @@
 /**
  *main - main function
  *
- *Description:The program does this and that
+ *Description:The program uses a for loop and putchar to print the alphabet
  *
  *
  *Return: Always returns 0
  */
 int main(void)
 {
-	for (char abc = 'a'; abc <= 'z'; abc++)
+	char abc;
+
+	for (abc = 'a'; abc <= 'z'; abc++)
 	{
 		putchar(abc);
 	}
