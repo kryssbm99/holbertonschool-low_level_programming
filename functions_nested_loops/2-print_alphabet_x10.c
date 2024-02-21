@@ -8,17 +8,21 @@
  */
 void print_alphabet_x10(void)
 {
-char abc = 'a';
+char abc;
 int outer = 0;
+int inner = 0;
 	while (outer < 10)
 {
-		while (abc <= 'z')
+	inner = 0;
+	abc = 'a';
+	while (inner < 26)
 {
-		_putchar(abc);
+	_putchar(abc);
+	abc++;
+	inner++;
+}
+	_putchar('\n');
+	outer++;
+}
 
-		abc++;
-}
-		_putchar('\n');
-		outer++;
-}
 }
