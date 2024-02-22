@@ -6,7 +6,7 @@
  *
  *Return: This program returns 1 if lower case and returns 0 otherwise
  */
-int _islower(int c);
+int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		{
