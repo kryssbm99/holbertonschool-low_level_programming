@@ -19,8 +19,8 @@ int product;
 			product = x * y;
 			if (product > 9)
 			{
-				b = result % 10;
-				a = (result - b) / 10;
+				b = product % 10;
+				a = (product - b) / 10;
 				_putchar(',');
 				_putchar(' ');
 				_putchar(a + '0');
