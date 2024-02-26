@@ -27,10 +27,6 @@ int x;
 		{
 			printf("%d ", x);
 		}
-		if (x != 100)
-		{
-			printf(" ");
-		}
 
 
 	}
