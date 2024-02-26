@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *print_line - Program prints _ based on the value of n
- *@n: variable for print_line
+ *print_diagonal - Program prints \  based on the value of n
+ *@n: variable for print_diagonal
  *Return: Always returns 0
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 int x;
 int y;
