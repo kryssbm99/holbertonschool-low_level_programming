@@ -13,18 +13,19 @@ int x;
 
 for (x = 0; x < 10; x++)
 {
-	for (num = '0'; num <= '9'; num++)
+	for (num = 0; num < 10; num++)
 	{
-		_putchar(num);
-	}
-	for (num = '10'; num <= '14; num++)
-	{
-		_putchar(num);
-	
-	}
+		for (x = 0; x <= 14; x++)
+		{
+			if (x >= 10)
+			{
+				_putchar('0' + (x / 10));
+			}
+			_putchar('0' + (x % 10));
+		}
 	_putchar('\n');
 
-	
+	}
 
 
 }
