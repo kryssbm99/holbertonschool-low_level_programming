@@ -23,13 +23,13 @@ int x;
 		{
 			printf("Buzz ");
 		}
+		else if (x == 100)
+		{
+			printf("Buzz");
+		}
 		else
 		{
 			printf("%d ", x);
-		}
-		if (x == 100)
-		{
-			printf("Buzz");
 		}
 
 
