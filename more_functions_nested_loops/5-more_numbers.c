@@ -23,4 +23,3 @@ int x;
 	_putchar('\n');
 	}
 }
-	
