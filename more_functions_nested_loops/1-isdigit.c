@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_isdigit - Program checks for digits and letters 
+ *_isdigit - Program checks for digits and letters
  *
  *@c: character that is being checked
  *
