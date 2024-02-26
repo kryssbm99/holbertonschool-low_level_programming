@@ -6,13 +6,15 @@
  *
  *Return: Will be void
  */
-void print_numbers(void)
+int print_numbers(void)
 {
-int x;
+	int x;
 
-for (x = 0; x < 10; x++)
+	for (x = 0; x < 9; x++)
 {
 	_putchar(x);
 }
 	_putchar('\n');
+
+	return (0);
 }
