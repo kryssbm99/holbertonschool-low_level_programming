@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *print_line - Program prints _ based on the valueof n
- *
+ *@n: variable for print_line
  *Return: Always returns 0
  */
 void print_line(int n)
