@@ -6,15 +6,15 @@
  *
  *@s: a pointer to char s
  *
- *Return: void
+ *Return: c
  */
-void int _strlen(char *s)
+int _strlen(char *s)
 {
 int c = 0;
 	while (*s != '\0')
 	{
 		c++;
-		p++;
+		s++;
 	}
 	return (c);
 }
