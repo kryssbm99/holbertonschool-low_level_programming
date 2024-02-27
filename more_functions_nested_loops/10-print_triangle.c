@@ -12,7 +12,7 @@ int s;
 char space = 32;
 	if (size > 0)
 	{
-		for (x = 1; x <= size; x++)
+		for (x = 0; x < size; x++)
 		{
 			for(s = size - (x + 1); s > 0; s--)
 			{	
