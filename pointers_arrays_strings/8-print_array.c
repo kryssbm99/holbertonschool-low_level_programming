@@ -18,12 +18,12 @@ int x = 0;
 		if (x != (n - 1))
 		{
 		printf("%d, ", a[x]);
-		x++
+		x++;
 		}
 		else
 		{
 		printf("%d", a[x]);
-		x++
+		x++;
 		}
 			
 	}
