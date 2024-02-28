@@ -26,6 +26,6 @@ int x = 0;
 		printf("%d", a[x]);
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 }
 
