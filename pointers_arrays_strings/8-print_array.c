@@ -15,8 +15,6 @@ int x = 0;
 
 	while (x < n - 1)
 	{
-		x++;
-
 		if (x != (n - 1))
 		{
 		printf("%d, ", a[x]);
@@ -25,6 +23,7 @@ int x = 0;
 		{
 		printf("%d", a[x]);
 		}
+			x++;
 	}
 	_putchar('\n');
 }
