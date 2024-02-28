@@ -15,14 +15,8 @@ int boo;
 
 	for (boo = 0; boo < n; boo++)
 	{
-		if (boo != (n - 1))
-		{
-			printf("%d, ", a[boo]);
-		}
-		else
-		{
-			printf("%d", a[boo]);
-		}
+		printf("%d%s", a[boo], (boo == n - 1) ? "" : ", ");
 	}
+
 	putchar('\n');
 }
