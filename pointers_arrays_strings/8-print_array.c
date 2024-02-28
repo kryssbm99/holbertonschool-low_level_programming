@@ -15,8 +15,17 @@ int x = 0;
 
 	while (x < n - 1)
 	{
-		printf("%d, ", a[x]);
 		x++;
+
+		if (x != (n - 1))
+		{
+		printf("%d, ", a[x]);
+		}
+		else
+		{
+		printf("%d", a[x]);
+		}
 	}
-		printf("%d\n", a[x]);
+	putchar('\n');
 }
+
