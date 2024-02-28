@@ -15,6 +15,6 @@ int x;
 	{
 		dest[x] = src[x];
 	}
-
+	dest[x] = '\0';
 	return (dest);
 }
