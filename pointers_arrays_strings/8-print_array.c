@@ -17,13 +17,17 @@ int x;
 	{
 		if (x != (n - 1))
 		{
+
 		printf("%d, ", a[x]);
-		}
-		else
-		{
-		printf("%d", a[x]);
+
 		}
 
+		else
+		{
+
+		printf("%d", a[x]);
+
+		}
 	}
 	_putchar('\n');
 }
