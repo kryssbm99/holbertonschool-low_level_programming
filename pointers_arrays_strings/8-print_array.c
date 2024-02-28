@@ -18,5 +18,5 @@ int x = 0;
 		printf("%d, ", a[x]);
 		x++;
 	}
-		printf("%d\n", a[n - 1]);
+		printf("%d\n", a[x]);
 }
