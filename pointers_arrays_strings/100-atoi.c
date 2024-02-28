@@ -1,16 +1,17 @@
 #include "main.h"
 #include <limits.h>
 /**
- *_atoi - Program copies the string pointer to by src
+ *_atoi - Program converts a string to an integer
  *
  *@s: destination pointer
  *
- *Return: void
+ *Return: result
  */
 int _atoi(char *s)
 {
 int sign = 1;
 int result = 0;
+int overflow = 0;
 
 	while (*s == ' ' || *s == '\t')
 	{
@@ -31,10 +32,16 @@ int result = 0;
 		if (result > INT_MAX / 10 || (result == INT_MAX / 10 &&
 						*s - '0' > INT_MAX % 10))
 		{
-			return (sign == 1 ? INT_MAX : INT_MIN);
+			overflow = 1;
+			break;
 		}
 		result = result * 10 + (*s - '0');
 		s++;
-}
-	return (result + sign);
+		}
+			result *= sign;
+			if (overflow)
+			{
+			return (sign == 1 ? INT_MAX : INT_MIN);
+			}
+	return (result);
 }
