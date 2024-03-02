@@ -10,10 +10,11 @@ char *leet(char *a)
 {
 char boom[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L', '\0'};
 char number[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1', '\0'};
-
-	for (int i = 0; a[i] != '\0'; i++)
+int i;
+int j;
+	for (i = 0; a[i] != '\0'; i++)
 	{
-		for (int j = 0; j < 11; j++)
+		for (j = 0; j < 11; j++)
 		{
 			if (a[i] == boom[j])
 			{
