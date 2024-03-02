@@ -8,21 +8,21 @@
  */
 char *leet(char *a)
 {
-char boom [] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L', '\0'};
-int number [] = {'4', '4', '3', '3', '0', '7', '7', '1', '1', '\0'};
-int x;
-int y;
+char boom[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L', '\0'};
+char number[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1', '\0'};
 
-for (x = 0; a[x] != '\0'; x++)
-{
-	for (y = 0; y < 11; y++)
+	for (int i = 0; a[i] != '\0'; i++)
 	{
-		if (a[x] == boom[y])
+		for (int j = 0; j < 11; j++)
 		{
-			a[x] = number[y];
+			if (a[i] == boom[j])
+			{
+				a[i] = number[j];
+			}
+
 		}
+
 	}
-}
 
 return (a);
 }
