@@ -9,24 +9,15 @@
 char *cap_string(char *a)
 {
 int x;
-int y;
-int z = 32;
-char values[] = {' ', '\t', '\n', ',', ';', '!'
-	, '?', '"', '(', ')', '{', '}', '\0'};
+char values[] = {' ', '\t', '\n', ',', ';', '!',
+	'?', '"', '(', ')', '{', '}', '\0'};
 
-	for (x = 0; a[x] != '\0'; x++)
+for (x = 0; a[x] != '\0'; x++)
+{
+	if (a[x] >= 'a' && a[x] <= 'z')
 	{
-		{
-			a[x] = a[x] - z;
-		}
-		z = 0;
-		for (y = 0; values[y] != '\0'; y++)
-		{
-			if (values[y] == a[x])
-			{
-				z = 32;
-			}
-		}
+	a[x] -= 32;
 	}
-	return (a);
+		}
+return (a);
 }
