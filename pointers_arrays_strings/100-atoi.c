@@ -1,5 +1,5 @@
 #include "main.h"
-#include <limits.h>
+
 /**
  *_atoi - Program converts a string to an integer
  *
@@ -12,10 +12,10 @@ int _atoi(char *s)
 	int sign = 1;
 	unsigned int n = 0;
 
-	do {
+do {
 		if (*s == '-')
 			sign *= -1;
-		
+
 		else if (*s >= '0' && *s <= '9')
 			n = (n * 10) + (*s - '0');
 
@@ -24,27 +24,7 @@ int _atoi(char *s)
 
 	} while (*s++);
 
-	return (n* sign);
+return (n * sign);
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
