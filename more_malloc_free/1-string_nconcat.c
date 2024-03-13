@@ -1,9 +1,10 @@
 #include "main.h"
-/*
- * string_nconcat - Function concatenates two strings using malloc
- * @s1: string 1 pointer to concat
- * @s2: string 2 pointer to concat
- * @n: unsigned int n variable
+
+/**
+ * string_nconcat - Concatenates two strings using malloc
+ * @s1: string 1 pointer to concatenate
+ * @s2: string 2 pointer to concatenate
+ * @n: Unsigned int n variable
  * Return: result
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
