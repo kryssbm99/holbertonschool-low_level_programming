@@ -22,7 +22,7 @@ int *array_range(int min, int max)
 
 	var = (int *) malloc(sizeof(int) * var);
 
-	if (mem == NULL)
+	if (var == NULL)
 	{
 		return (NULL);
 	}
