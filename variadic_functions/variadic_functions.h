@@ -1,7 +1,5 @@
 #ifndef VARIADIC_FUNCTIONS_H_
 #define VARIADIC_FUNCTIONS_H_
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
@@ -13,14 +11,14 @@ void print_all(const char * const format, ...);
 int _putchar(char c);
 
 /**
- *struct type - struct function
- *@t: char t
- *@f: pointer to f for function
+ *struct type - struct
+ *@t: types
+ *@f: pointer to function
  */
-	typedef struct type
+typedef struct type
 {
-	char t;
-	void(*f)(va_list);
+		char t;
+			void(*f)(va_list);
 } type;
 
 #endif
