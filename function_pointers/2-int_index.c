@@ -5,7 +5,7 @@
  *@size: Number of elements in the array
  *@cmp: Pointer to the function to be used to compare
  *
- *
+ *Return: Returns -1 or returns x
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
