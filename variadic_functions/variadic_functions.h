@@ -10,4 +10,15 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 int _putchar(char c);
 
+/**
+ *struct type - Struct function
+ *@t: Char variable for t
+ *@f: Pointer of f
+ *
+ */
+typedef struct type
+{
+	            char t;
+	void(*f)(va_list);
+} type;
 #endif

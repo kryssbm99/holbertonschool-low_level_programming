@@ -1,51 +1,45 @@
 #include "variadic_functions.h"
+#include "print1.c"
+#include "print2.c"
+#include "print3.c"
+#include "print4.c"
+
 /**
  *print_all -  function that prints anything.
  *@format: input types
  */
 void print_all(const char * const format, ...)
 {
-	va_list args;
+	int i, j;
+	char *space = "";
+	va_list par;
 
-	char c;
-	int i;
-	float f;
-	char *s;
-	int index = 0;
+	type style[] = {
+		{'c', printchar},
+		{'i', printint},
+		{'f', printfloat},
+		{'s', printstring}
+	};
 
-	va_start(args, format);
+	va_start(par, format);
 
-	while ((c = format[index++]) != '\0')
-	{
-		switch (c)
+	i = 0;
+		while (format && format[i])
 		{
-			case 'c':
-				i = va_arg(args, int);
-				printf("%c", i);
-				printf(", ");
-				break;
-			case 'i':
-				i = va_arg(args, int);
-				printf("%d", i);
-				printf(", ");
-				break;
-			case 'f':
-				f = va_arg(args, double);
-				printf("%f", f);
-				printf(", ");
-				break;
-			case 's':
-				s = va_arg(args, char *);
-				if (s == NULL)
-					printf("(nil)");
-				if (s != NULL)
-					printf("%s", s);
-				break;
-			default:
-				break;
+			j = 0;
+			while (style[j].t)
+			{
+				if (style[j].t == format[i])
+				{
+					printf("%s", space);
+					style[j].f(par);
+					space = ", ";
+				}
+				j++;
+			}
+			i++;
 		}
-	}
-	printf("\n");
 
-	va_end(args);
+	va_end(par);
+	printf("\n");
 }
