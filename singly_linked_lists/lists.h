@@ -5,6 +5,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+/**
+ *struct list - Single linked lists
+ *@str: String for malloc
+ *@len: Length of the string
+ *@next: Singly linked lists node struc
+ */
 
 typedef struct list
 {
